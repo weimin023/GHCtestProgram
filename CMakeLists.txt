@@ -5,12 +5,9 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_BUILD_TYPE Debug)
-set(BOOST_ROOT ${CMAKE_SOURCE_DIR}/boost/include)
-set(CMAKE_PREFIX_PATH ${BOOST_ROOT})
 
-find_package(Boost REQUIRED COMPONENTS system)
-
-include_directories(${CMAKE_SOURCE_DIR}/src/ ${BOOST_ROOT})
+include_directories(${CMAKE_SOURCE_DIR}/src/)
+include_directories(${CMAKE_SOURCE_DIR}/asio-1.28.0/include/)
 add_subdirectory(src)
 
 

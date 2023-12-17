@@ -4,10 +4,10 @@
 #include <vector>
 #include <map>
 #include <sstream>
-#include "boost/asio.hpp"
+#include "asio.hpp"
 
-using boost::asio::thread_pool;
-using boost::asio::post;
+using asio::thread_pool;
+using asio::post;
 
 collectIDProcess2::collectIDProcess2(const std::vector<std::string>& fnames):fnames_(fnames)
 {
