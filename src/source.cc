@@ -28,7 +28,7 @@ void collectIDProcess2::run()
 			std::string line;
 			int lineNum = 0;
 			while (std::getline(f, line)) {
-                int mapCountIdx = lineNum%threadNum_;
+                		int mapCountIdx = lineNum%threadNum_;
 				post(threadPool, std::bind(&collectIDProcess2::threadWorker, this, line, lineNum, mapCountIdx));
 				lineNum++;
 			}
