@@ -13,9 +13,9 @@ public:
 private:
 	void threadWorker(std::string line, int lineNum, int mapCountIdx);
 
-    void saveToThreadMap(const std::string& line, const int& mapCountIdx);
-    void mergeToMainMap();
-    void mainMapInfo();
+    	void saveToThreadMap(const std::string& line, const int& mapCountIdx);
+    	void mergeToMainMap();
+    	void mainMapInfo();
 	std::vector<std::string> splitStr(const std::string& str, const std::string& pattern);
 
 	const int threadNum_ = 8;
