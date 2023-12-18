@@ -2,7 +2,7 @@
 1. src: 包含了source.cc, source.h  
 2. testdata: 包含了testGen.py, 負責產生16個文本測資, 格式如下
    - 第一欄為亂序user_id, 其餘欄位為不重複的亂數字母
-   - 16分文本測資的user_id都沒有重複
+   - 每分文本測資有10個user_id, 文本之間的user_id都沒有重複
 > U00003 SlhWsRKH mPjUUvYn ShkysWsG  
 > U00004 ObQQnjfe ibPDQmPd BFCQfMor  
 > U00000 rBGOYbTy GrxVYFmq REhooBbT  
